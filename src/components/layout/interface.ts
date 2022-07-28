@@ -1,0 +1,92 @@
+import React from 'react'
+
+export interface IIcon {
+    src: string
+    position: string
+}
+export interface INormalLink {
+    label: string
+    title: string
+    url: string
+    color: string
+    icon?: IIcon
+}
+
+export interface IColumnLink {
+    title: string
+    links: INormalLink[]
+    style?: 'item' | 'group'
+}
+
+export interface IImage {
+    alt: string
+    src: string
+}
+
+export interface IImageLink {
+    url: string
+    img: IImage
+    title: string
+}
+
+/*bof footer*/
+// export interface IFooterData {
+//     title: string
+//     links: INormalLink[]
+// }
+
+// export interface FooterProps {
+//     data: IFooterData[]
+// }
+/*eof footer*/
+
+/*bof header*/
+export interface INav {
+    title: string
+    columns: IColumnLink[]
+    images: IImageLink[]
+}
+export interface WishlistProps {
+    description: string
+    img: string
+    price: string
+    title: string
+}
+export interface IHeaderData {
+    nav: INav[]
+    help: IColumnLink
+    wishlist: WishlistProps[]
+}
+export interface HeaderProps {
+    data: IHeaderData
+    notShowPopup?: boolean
+}
+/*eof header*/
+
+/*bof layout*/
+export type LayoutType = 'Default' | 'Simple' | 'Custom' | undefined // undefined : 默认为Default类型
+
+export interface CustomLayoutOpts {
+    showDefaultHeader?: boolean
+    showSimpleHeader?: boolean
+    showFooter?: boolean
+}
+export interface LayoutProps {
+    layoutType?: LayoutType
+    customLayoutOpts?: CustomLayoutOpts
+    isMobile?: boolean
+    // footerData: IFooterData[]
+    headerData: IHeaderData
+    children?: React.ReactNode
+    seo?: SeoProps
+}
+/*eof layout*/
+
+export interface FvpProps {
+    isMobile?: boolean
+    showPopup?: boolean
+}
+
+export interface SeoProps {
+    host: string
+}

@@ -1,0 +1,266 @@
+.header {
+    position: fixed;
+    top: 50px;
+    left: 0;
+    z-index: 300;
+    width: 100%;
+    min-height: 50px;
+    color: #fff;
+    background-color: #fff;
+    border-bottom: 2px solid #f7f7f7;
+    transition: all 0.3s;
+
+    .container {
+        position: relative;
+        max-width: 1360px;
+        min-height: 48px;
+        margin: 0 auto;
+    }
+
+    .btn-left-shortcut {
+        display: inline-block;
+        padding-left: 10px;
+
+        span {
+            float: left;
+            height: 40px;
+            padding: 5px;
+            cursor: pointer;
+        }
+
+        .btn-left-menu {
+            width: 30px;
+            margin-right: 15px;
+            padding-top: 11px;
+            @media (min-width: 768px){
+                margin-right: 18px;
+            }
+        }
+
+        .btn-left-search {
+            width: 27px;
+            margin-left: 3px;
+            padding-top: 16px;
+        }
+    }
+
+    .search-dropdown {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 10%);
+        transform: translateY(100%);
+        transition: all 0.3s;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        width: 74px;
+        height: 30px;
+        margin-top: 10px;
+        margin-left: -37px;
+        transition: all 0.25s ease-out;
+    }
+
+    .btn-right-shortcut {
+        float: right;
+        padding-right: 5px;
+
+        & > li {
+            float: left;
+
+            div {
+                display: inline-block;
+                margin-top: 8px;
+                padding: 5px;
+            }
+        }
+
+        .shortcut-top-link {
+            display: flex;
+            align-items: center;
+
+            .favorite-nums {
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                margin-left: 3px;
+                color: #fff;
+                font-size: 10px;
+                line-height: 19px;
+                text-align: center;
+                background-color: #707070;
+                border-radius: 50%;
+            }
+
+            .cart-nums {
+                display: inline-block;
+                width: 19px;
+                height: 19px;
+                margin-left: 3px;
+                color: #fff;
+                font-size: 10px;
+                line-height: 19px;
+                text-align: center;
+                background-color: #357b92;
+                border-radius: 50%;
+            }
+        }
+
+        .favorites {
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .cart {
+            img {
+                width: 17px;
+                height: 20px;
+            }
+        }
+    }
+}
+
+.im-front-icon-nav {
+    position: relative;
+    top: 2px;
+    margin-right: 6px;
+}
+
+.im-end-icon-nav {
+    position: relative;
+    top: 2px;
+    margin-left: 6px;
+}
+
+.nav-image {
+    display: flex;
+    align-items: center;
+
+    &:active {
+        color: #d39d4e;
+    }
+
+    .nav-title {
+        margin-left: 11px;
+        color: #000;
+    }
+}
+
+.help-details {
+    padding: 24px 25px 5px 37px;
+
+    h4 {
+        margin: 0 auto;
+        color: #000;
+        font-size: 18px;
+    }
+
+    .faq-others {
+        margin-top: 13px;
+        color: #444;
+        font-size: 14px;
+        line-height: 1.4;
+
+        > div,
+        > a {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .nav-live-chat {
+            position: relative;
+        }
+
+        .head-live-chat {
+            position: absolute;
+            top: 6px;
+            left: 18px;
+            opacity: 0;
+        }
+
+        svg,
+        span {
+            vertical-align: text-bottom;
+        }
+
+        .chat-tip {
+            span {
+                padding-left: 8px;
+                text-decoration: underline;
+            }
+        }
+
+        :global(.LPMcontainer) {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            opacity: 0;
+        }
+
+        .faq-tel-time {
+            .tel {
+                padding-left: 6px;
+                text-decoration: underline;
+
+                &:active {
+                    color: #d39d4e;
+                }
+            }
+
+            .tel-txt {
+                padding-left: 2px;
+            }
+        }
+
+        .faq-send-msg,
+        .btn-find {
+            &:active {
+                color: #d39d4e;
+            }
+
+            span {
+                padding-left: 7px;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.slide-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10px 10px 22px;
+    background: #f6f6f6;
+
+    a {
+        display: inline-block;
+        margin-right: 18px;
+        color: #888;
+        font-size: 16px;
+        text-decoration: underline;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .language-select {
+        text-decoration: none;
+
+        i {
+            vertical-align: text-bottom;
+        }
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}

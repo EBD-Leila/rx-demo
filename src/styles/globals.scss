@@ -1,0 +1,139 @@
+// @import './common/variables';
+// @import './common/font';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    background: #fff;
+    -webkit-tap-highlight-color: transparent;
+}
+
+body {
+    padding-top: 100px;
+    // color: $default-black;
+    color: #000;
+    font-size: 14px;
+    // font-family: $font-family-base;
+    line-height: 1.4;
+    letter-spacing: 0.3pt;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+}
+
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+form,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+ins {
+    text-decoration: none;
+}
+
+a {
+    // color: $default-black;
+    color: #000;
+    text-decoration: none;
+    outline: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    // color: $primary-color;
+    text-decoration: underline;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    color: inherit;
+    line-height: 1.1;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 30px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+.clearfix::after {
+    display: block;
+    clear: both;
+    height: 0;
+    content: '';
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+.none {
+    display: none;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/* inherit font-family, override use user agent stylesheet */
+button {
+    font-family: inherit;
+}
+
+/* for root bing img */
+body > img[src*='bing'] {
+    display: none;
+}
+
+.test {
+    color: blue;
+}

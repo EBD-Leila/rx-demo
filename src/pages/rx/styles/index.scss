@@ -1,0 +1,15 @@
+.rx-container {
+    position: relative;
+    max-width: 1370px;
+    margin: 0 auto;
+    // padding-bottom: 50px;
+}
+.rx-main {
+    padding-left: 41%;
+    @media (min-width: 1200px) {
+        padding-left: 490px;
+    }
+}
+.rx-content {
+    padding: 20px 40px;
+}

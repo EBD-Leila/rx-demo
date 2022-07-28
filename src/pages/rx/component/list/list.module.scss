@@ -1,0 +1,173 @@
+.rx-options-piece {
+    text-align: left;
+    margin-top: 15px;
+}
+
+//list-item
+.rx-option {
+    position: relative;
+    padding: 20px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border-top: 2px solid #f6f6f6;
+    // &:last-child {
+    //     border-bottom: 2px solid #f6f6f6;
+    // }
+    &:hover {
+        background: #fcf6ec;
+    }
+    &:focus,
+    &:active {
+        background: #efce9b;
+    }
+    
+}
+.sub-content-wrapper {
+    min-height: 115px;
+    padding-left: 145px;
+    &:last-child {
+        border-bottom: 2px solid #f6f6f6;
+    }
+}
+// .rx-option {
+//     position: relative;
+//     padding: 20px 0;
+//     font-size: 16px;
+//     cursor: pointer;
+//     min-height: 115px;
+//     padding-left: 145px;
+// }
+  .img-box,   .img-box-three,   .img-box-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 145px;
+    height: 115px;
+    padding-top: 5px;
+}
+  .im-rx {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-image: url('../../../../../public/rx/icon-group.png');
+    background-repeat: no-repeat;
+}
+.im-rx-distance {
+    height: 86px;
+    background-position: -100px 0;
+}
+.im-rx-reading {
+    background-position: -200px 0;
+}
+.im-rx-multfocal {
+    background-position: -300px 0;
+}
+.im-rx-non-prescription {
+    background-position: 0 0;
+}
+.option-title {
+    // position: relative;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.option-description {
+    font-weight: 100;
+    overflow: hidden;
+}
+//   .option-content{
+// }
+
+.help {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    // display: none;
+
+    // font-family: ebd!important;
+    // font-style: normal;
+    // font-variant: normal;
+    // text-transform: none;
+    // line-height: 1;
+    // -webkit-font-smoothing: antialiased;
+    // -moz-osx-font-smoothing: grayscale;
+    // // font-family: arial;
+    // display: inline-block;
+    // width: 23px;
+    // height: 23px;
+    // text-align: center;
+    cursor: pointer;
+    // vertical-align: middle;
+    // text-decoration: none;
+    // &:before {
+    //     content: "\e625";
+    //     font-size: 22px;
+    //     font-weight: 700;
+    // }
+    // &:hover {
+    //     color: #d39d4e;
+    // }
+}
+
+.rx-sub-option-wrapper {
+    .sub-option-title {
+        //padding-left: 20px;
+        //padding-left: 35px;
+        padding-left: 50px;
+        padding-right: 50px;
+        border-top: 2px solid #f6f6f6;
+        font-weight: 500;
+        @media (max-width: 420px) {
+            padding-left: 30px;
+        }
+        /* .help {
+            position: absolute;
+            right: 15px;
+            top: 18px;
+            display: none;
+        } */
+    }
+
+}
+
+.rx-sub-option-wrapper {
+    .rx-option {
+    // bof hover
+        // &:hover,
+        // &.hover {
+        //     background-color: #d39d4e;
+        // }
+
+        // &.current,
+        // &.selected {
+        //     background-color: #d39d4e;
+        // }
+        /* // eof for mobile tips
+        .current .option-title,
+        .selected .option-title {
+            border-bottom-color: #fff;
+        }
+
+        .rx-package-list .current .option-title {
+            margin: 0 15px;
+            color: #fff;
+            background-color: #404040;
+        }
+        .current .option-price,
+        .selected .option-price {
+            color: #fff;
+        }
+
+         */
+
+
+
+        &.disabled,
+        &.disabled:hover {
+            opacity: .8;
+            cursor: default;
+            color: #000;
+            // background-color: $rx-sub-disabled-bg;
+        }
+    }
+}

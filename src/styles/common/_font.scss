@@ -1,0 +1,36 @@
+@font-face {
+    font-weight: 100;
+    font-family: Roboto-ebd;
+    font-style: normal;
+    src: url('../../../public/fonts/EBD-Light.eot');
+    src: url(' ../../../public/fonts/EBD-Light.eot?#iefix') format('embedded-opentype'), url(' ../../../public/fonts/EBD-Light.woff2') format('woff2'),
+        url(' ../../../public/fonts/EBD-Light.woff') format('woff');
+    font-display: fallback;
+}
+@font-face {
+    font-weight: normal;
+    font-family: Roboto-ebd;
+    font-style: normal;
+    src: url(' ../../../public/fonts/EBD-Regular.eot');
+    src: url(' ../../../public/fonts/EBD-Regular.eot?#iefix') format('embedded-opentype'), url(' ../../../public/fonts/EBD-Regular.woff2') format('woff2'),
+        url(' ../../../public/fonts/EBD-Regular.woff') format('woff');
+    font-display: fallback;
+}
+@font-face {
+    font-weight: 500;
+    font-family: Roboto-ebd;
+    font-style: normal;
+    src: url(' ../../../public/fonts/EBD-Medium.eot');
+    src: url(' ../../../public/fonts/EBD-Medium.eot?#iefix') format('embedded-opentype'), url(' ../../../public/fonts/EBD-Medium.woff2') format('woff2'),
+        url(' ../../../public/fonts/EBD-Medium.woff') format('woff');
+    font-display: fallback;
+}
+@font-face {
+    font-weight: bold;
+    font-family: Roboto-ebd;
+    font-style: normal;
+    src: url(' ../../../public/fonts/EBD-Bold.eot');
+    src: url(' ../../../public/fonts/EBD-Bold.eot?#iefix') format('embedded-opentype'), url(' ../../../public/fonts/EBD-Bold.woff2') format('woff2'),
+        url(' ../../../public/fonts/EBD-Bold.woff') format('woff');
+    font-display: fallback;
+}
